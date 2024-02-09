@@ -1,0 +1,39 @@
+<div class="example">
+    <form class="mx-4" [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        
+          
+          <div class="oop">
+            <label for="fullname">Fullname  </label>
+          <input type="text" id="fullname " placeholder="Enter your fullname"
+          formControlName="fullname">
+        </div>
+
+        <div class="oop">
+          <label for="contactinfo">Contact Information </label>
+          <input type="text" id="contactinfo" formControlName="contactinfo">
+        </div>
+
+        <div class="oop">
+          <label for="position">Position </label>
+          <input type="text" id="position" formControlName="position">
+        </div>
+
+        <div class="oop">
+          <label for="department">Department </label>
+          <input type="text" id="department" formControlName="department">
+          </div>
+
+          <div class="oop">
+            <label for="status">Status </label>
+            <input type="text" id="status" formControlName="status">
+          </div>
+              <p>Complete the form to enable button</p>             
+          <button type="submit" class="button is-large is-warning" [disabled]="!registrationForm.valid"> Submit</button>
+         
+        <p>Form Status: {{ registrationForm.status }}</p>
+        <div>
+
+        </div>
+      </form>  
+  </div>
+  
