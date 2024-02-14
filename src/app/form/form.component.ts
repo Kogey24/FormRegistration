@@ -18,7 +18,7 @@ export class FormComponent implements OnInit {
   
 
   constructor(
-    private fb: FormBuilder,
+    private fb: FormBuilder
   ) {};
   
 
